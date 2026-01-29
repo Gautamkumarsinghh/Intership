@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato Style Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f8f8;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                  url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-body h3 {
+      margin: 0 0 5px;
+      font-size: 18px;
+    }
+    .price {
+      color: #e23744;
+      font-weight: 600;
+    }
+    .rating {
+      background: #24963f;
+      color: white;
+      padding: 4px 8px;
+      border-radius: 6px;
+      font-size: 14px;
+      display: inline-block;
+      margin-top: 8px;
+    }
+    .info {
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+    }
+    footer {
+      background: #1c1c1c;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Spice Garden</h1>
+  <p>North Indian • Chinese • Fast Food</p>
+</header>
+
+<div class="container">
+  <div class="section-title">Popular Items</div>
+  <div class="menu-grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1605478371310-a9f1e96b4a6c" />
+      <div class="card-body">
+        <h3>Paneer Butter Masala</h3>
+        <div class="price">₹220</div>
+        <div class="rating">4.5 ★</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46" />
+      <div class="card-body">
+        <h3>Veg Biryani</h3>
+        <div class="price">₹180</div>
+        <div class="rating">4.3 ★</div>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" />
+      <div class="card-body">
+        <h3>Masala Dosa</h3>
+        <div class="price">₹120</div>
+        <div class="rating">4.6 ★</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-title">Restaurant Info</div>
+  <div class="info">
+    <p><strong>📍 Address:</strong> Main Road, Vapi, Gujarat</p>
+    <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+    <p><strong>⏰ Timings:</strong> 10:00 AM – 11:00 PM</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section-title">Location</div>
+  <iframe src="https://www.google.com/maps?q=Vapi%20Gujarat&output=embed"></iframe>
+</div>
+
+<footer>
+  <p>© 2026 Spice Garden | Zomato‑Inspired UI</p>
+</footer>
+
+</body>
+</html>

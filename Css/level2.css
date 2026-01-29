@@ -1,0 +1,35 @@
+#io{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(235, 51, 22);
+    border-radius: 50%;
+}
+
+#wo{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+     border-radius: 50%;
+}
+
+
+#ow{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(154, 244, 8);
+     border-radius: 50%;
+}
+
+
+#yo{
+    background-color: black;
+    height: 100vh; 
+                 /* full screen */
+    display: flex;              
+    flex-direction: column;     /* circles vertical */
+    justify-content: center;    /* vertical center */
+    align-items: center;        /* horizontal center */
+}
+h1{
+    color: rgb(250, 248, 248);
+}

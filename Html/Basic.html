@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  
+</head>
+<body>
+  <div>
+  <h2>Registration Form</h2>
+  
+  <div>
+
+ <form action="Submit.php" method="get">
+    <label >Full name:</label><br>
+    <input type="text" name="fullname"placeholder="enter your full name"  required> <br><br>
+  
+    <label>Email:</label><br>
+    <input type="email" name="Email" placeholder="Enter Email" required><br><br>
+
+    <label>password:</label><br>
+    <input type="password" name="password" placeholder="Enter Password" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" name="Gender" value="male">Male
+    <input type="radio" name="Gender" value="female">Female
+    <br><br>
+
+    <label>Skill:</label><br>
+    <input type="checkbox" name="skill" value="Html">Html
+    <input type="checkbox" name="skill" value="CSS">CSS
+    <input type="checkbox" name="skill" value="javaScript">JavaScript
+    <br><br>
+
+    <label>Country:</label><br>
+    <select name="Country">
+      <option value="">Select Country</option>
+      <option value="India">India</option>
+      <option value="Usa">Usa</option>
+      <option value="China">China</option>
+      <option value="Canada">Canada</option>
+      <option value="Nepal">Nepal</option>
+    </select>
+  </form>
+  <br>
+
+  <label>Course</label>
+  <select name="Course" >
+    <option >BA</option>
+    <option >Bsc</option>
+    <option >Bcom</option>
+    <option >btech</option>
+  </select>
+  <br><br>
+  <label for="Message">
+    <textarea name="Message" rows="4" cols="40"></textarea>
+  </label>
+   </div>
+</div>
+  <input type="submit"value="Register">
+
+</body>
+</html>
